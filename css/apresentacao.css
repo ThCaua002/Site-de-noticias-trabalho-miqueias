@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+    font-family: "Open Sans", Helvetica;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #000000;
+    background-image: url(../img/fundo-apresentacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), 10px 10px 15px rgba(0, 0, 0, 0.3),
+        15px 15px 20px rgba(0, 0, 0, 0.5);
+    height: 930px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+}
+
+header marquee {
+    color: #ffffff;
+    height: 30px;
+}
+
+nav{
+    position: relative;
+    z-index: 10;
+}
+
+.conteudo {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 25px;
+}
+
+.conteudo h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.conteudo p {
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.conteudo div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.conteudo div a {
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+#quem-somos h2,
+#materias h2,
+#autores h2 {
+    text-align: center;
+}
+
+#quem-somos div,
+#materias p,
+#autores p {
+    max-width: 700px;
+    margin: 1em auto;
+    line-height: 1.75;
+}
+
+#materias {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.inform {
+    max-width: 225px;
+    margin: 0 auto;
+}
+
+.inform hr {
+    border-style: none;
+    background-color: #000000;
+    
+    height: 1px;
+}
+
+.inform fieldset {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    line-height: 2.0;
+    max-width: 200px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inform fieldset legend {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.inform fieldset q {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.inform p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: #333333;
+    color: #ffffff;
+}
